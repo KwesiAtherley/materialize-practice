@@ -25,6 +25,15 @@
             padding-bottom: 4vw;
         }
 
+        .tabs .indicator {
+            background-color: #1a237e;
+        }
+
+        .tabs .tab a:focus,
+        .tabs .tab a:focus.active {
+            background: transparent;
+        }
+
         @media screen and (max-width: 670px) {
             header {
                 min-height: 500px;
@@ -98,19 +107,47 @@
     </div>
 
     <!-- services / tabs -->
-    <div class="container">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum possimus ullam voluptates? Nobis,
-            necessitatibus, aspernatur inventore iste accusamus et laborum animi quos porro consectetur, beatae
-            nesciunt. Consectetur dolore obcaecati quis.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero at, excepturi sequi quia inventore vero?
-            Deserunt dolores quo rerum architecto impedit ea mollitia reiciendis molestias. Voluptatem culpa officiis
-            quae rem?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, ullam ipsum voluptatem, perferendis, ipsa
-            veniam est eaque rem id iusto totam deserunt necessitatibus modi harum iste laborum dolorum commodi unde.</p>
-    </div>
-
-
-    <!-- parallax -->
+    <section class="container section" id="services">
+        <div class="row">
+            <div class="col s12 l4">
+                <h2 class="indigo-text text-darken-4">What I do...</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, sit eligendi. Labore ullam
+                    consequuntur voluptatibus maiores, deserunt ab harum, incidunt nisi quasi ducimus, illum deleniti
+                    ut dolor quas. Rerum, nesciunt!</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque iure, temporibus impedit magni
+                    dolores reiciendis suscipit asperiores, ipsum, dolore esse unde? Aspernatur quae quod maxime et eos
+                    consequuntur distinctio similique.</p>
+            </div>
+            <div class="col s12 l6 offset-l2">
+                <ul class="tabs">
+                    <li class="tab col s6">
+                        <a href="#photography" class="indigo-text text-darken-4">Photography</a>
+                    </li>
+                    <li class="tab col s6">
+                        <a href="#editing" class="indigo-text text-darken-4">Editing</a>
+                    </li>
+                </ul>
+                <div class="col sl2" id="photography">
+                    <p class="flow-text indigo-text text-darken-4">PHOTOGRAPHY</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis veritatis sapiente commodi porro
+                        dolorem odit vel magni, atque delectus, et doloremque esse necessitatibus! Tenetur fugiat optio
+                        eum, perferendis excepturi ad.</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea inventore exercitationem sequi,
+                        enim praesentium distinctio velit minus rerum earum consequatur repellat corrupti similique
+                        fuga architecto dolorum tenetur unde ex optio.</p>
+                </div>
+                <div class="col sl2" id="editing">
+                    <p class="flow-text indigo-text text-darken-4">EDITING</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis veritatis sapiente commodi porro
+                        dolorem odit vel magni, atque delectus, et doloremque esse necessitatibus! Tenetur fugiat optio
+                        eum, perferendis excepturi ad.</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea inventore exercitationem sequi,
+                        enim praesentium distinctio velit minus rerum earum consequatur repellat corrupti similique
+                        fuga architecto dolorum tenetur unde ex optio.</p>
+                </div>
+            </div>
+        </div>
+    </section> <!-- parallax -->
     <div class="parallax-container">
         <div class="parallax">
             <img src="img/stars.jpg" alt="" class="responsive-img">
@@ -129,6 +166,7 @@
             $('.sidenav').sidenav();
             $('.materialboxed').materialbox();
             $('.parallax').parallax();
+            $('.tabs').tabs();
         });
     </script>
 </body>
